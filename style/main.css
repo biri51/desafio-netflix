@@ -1,5 +1,5 @@
 :root{
-    --red:#E50914;
+
     --black: #141414;
 }
 
@@ -19,20 +19,37 @@ header .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;  
+    padding-bottom: 30px;
+    padding-top: 10px;
 }
-
+header .logoimg{
+    height: 20px;
+    width: 20px;
+    margin-bottom: 5px;
+}
 header .logo{
-    margin-left: 5px;
-    color: var(--red);
-    font-family: 'Arial Black', Times;
-    font-size: 40px;
+    position: absolute;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    color: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    padding-left: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
 }
 
-header nav a {
-    text-decoration: none;
-    color: #AAA;
-    margin-right: 10px;
+header nav {
+    /* background-color: rgba(0,0,0,.50); */
+    color: white;
+
+    padding: 16px 32px;
+    margin-right: 16px;
+    font-size: 12px;
+   
+    cursor: pointer;
+    transition: 0.3s ease all;
 }
 
 header nav a:hover {
@@ -40,9 +57,9 @@ header nav a:hover {
 }
 
 /* filme principal */
-.main-movie {
-    font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('/img/capa-house.jpg');
+.bblist {
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('/img/spot-img-center.jpg');
 
     height: 500px;
     background-size: cover;
@@ -52,14 +69,16 @@ header nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    
 }
 
-.main-movie .description{
+.bblist .description{
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
-.main-movie .title {
+.bblist .title {
     margin-top:15%;
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
@@ -71,6 +90,7 @@ header nav a:hover {
     background-color: rgba(0,0,0,.50);
     border: none;
     color: white;
+    margin-left:16px;
 
     padding: 16px 32px;
     margin-right: 16px;
@@ -78,6 +98,8 @@ header nav a:hover {
    
     cursor: pointer;
     transition: 0.3s ease all;
+
+    border-radius:0.5rem;
 }  
 
 .button:hover {
@@ -105,4 +127,8 @@ header nav a:hover {
 
 .carrosel-films{
     margin-top: 5px;
+}
+
+.owl-carousel .film-box:hover{
+    opacity: 0.7;
 }
